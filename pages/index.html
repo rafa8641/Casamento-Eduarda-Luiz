@@ -9,8 +9,8 @@
 </head>
 <body>
     
+    <div id="fundo_inicio">
     <header>
-
         <nav id="nav">
             <div class="logo_index">
                 <a href="index.html">
@@ -33,19 +33,49 @@
             </div>
 
             <img src="../img/lavender_branca.svg" alt="icone_lavender_branca" id="lavender_branca">
+
         </nav>
-        
     </header>
 
-    <div style="height: 1000px"></div> <!--Testar nav bar -->
-
-    <main>
-        <section>
-            <h1>Bem vindos ao nosso sonho...</h1>
-            <h1>17/05/2025</h1>
-
+        <section id="inicio">
+            <h1 id="frase_inicio">Bem vindos ao nosso sonho...</h1>
+            <h1 id="data_inicio">17/05/2025</h1>
         </section>
 
+    </div>
+
+    <main>
+        <section id="aba_contador">
+
+            <img src="../img/lavandas.svg" alt="lavandas">
+
+            <img src="../img/foto_02.svg" alt="foto_02">
+
+            <article id="contador">
+                <div class="box_contador">
+                    <span class="valor_contador" data-dias>00</span>
+                    <span class="desc_contador">Dias</span>
+                </div>
+
+                <div class="box_contador">
+                    <span class="valor_contador" data-horas>00</span>
+                    <span class="desc_contador">Horas</span>
+                </div>
+
+                <div class="box_contador">
+                    <span class="valor_contador" data-minutos>00</span>
+                    <span class="desc_contador">Minutos</span>
+                </div>
+
+                <div class="box_contador">
+                    <span class="valor_contador" data-segundos>00</span>
+                    <span class="desc_contador">Segundos</span>
+                </div>
+            </article>
+
+            <p id="oracao_contador">"Nem muitas águas conseguem apagar o amor; os rios não conseguem levá-lo na correnteza" <br> Cântico dos cânticos 8:7</p>
+
+        </section>
     </main>
 
 

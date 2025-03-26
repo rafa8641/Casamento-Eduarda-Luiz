@@ -6,10 +6,10 @@
 }
 
 body{
-    background-image: url("../img/foto_01.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: bisque;
 }
+
+/* Navegação */
 
 header{
     position: fixed;
@@ -78,6 +78,78 @@ nav{
     padding: 0px 50px 0px 50px;
 }
 
+/* Começo */
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 640px 0px 40px 0px;
+}
+
+#inicio h1{
+    color: #F4F4F4;
+    font-size: 40px;
+    font-weight: 100;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+#frase_inicio{
+    font-family: "Parisienne", cursive;
+    
+}
+
+@keyframes slidein{
+    from {
+        margin-right: 100%;
+        width: 100%;
+        display: none;
+      }
+    
+      to {
+        margin-right: 0%;
+        width: -100%;
+      }
+}
+
+#data_inicio{
+    font-family: "Oranienbaum", serif;
+}
+
+#fundo_inicio{
+    background-image: url("../img/foto_01.svg");
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+}
+
+/* Contador */
+
+#contador{
+    font-family: "Aboreto", system-ui;
+    color: #6A4F82;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box_contador{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.valor_contador{
+    font-size: 48px;
+}
+
+.desc_contador{
+    font-size: 16px;
+}
+
+
+/* Footer */
 footer{
     background-color: #B9AACB;
     color: #F4F4F4;
